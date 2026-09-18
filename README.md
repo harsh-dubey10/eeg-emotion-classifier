@@ -1,4 +1,4 @@
-# EEG Emotion Recognition — SEED Dataset
+# EEG Emotion Recognition - SEED Dataset
 
 Three-class emotion recognition (**Negative / Neutral / Positive**) using precomputed differential-entropy (DE) and asymmetry EEG features from the [SEED dataset](http://bcmi.sjtu.edu.cn/~seed/) (SJTU BCMI Lab).
 
