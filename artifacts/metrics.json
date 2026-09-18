@@ -1,0 +1,87 @@
+{
+  "split": {
+    "held_out_subjects": [
+      "13",
+      "14",
+      "15"
+    ],
+    "validation_subject": "12",
+    "train_windows": 112002,
+    "val_windows": 10182,
+    "test_windows": 30546
+  },
+  "features": "de_LDS (310) + dasm_LDS (135) + rasm_LDS (135) = 580 dims",
+  "normalization": "per-session z-score + train-fitted StandardScaler",
+  "temporal_smoothing": "continuous posterior averaging, window=15",
+  "svm_raw": {
+    "accuracy": 0.7418,
+    "macro_f1": 0.7397
+  },
+  "mlp_raw": {
+    "accuracy": 0.8079,
+    "macro_f1": 0.8051
+  },
+  "ensemble_raw": {
+    "accuracy": 0.8139,
+    "macro_f1": 0.8112
+  },
+  "svm": {
+    "accuracy": 0.7382,
+    "macro_f1": 0.736
+  },
+  "mlp": {
+    "accuracy": 0.8064,
+    "macro_f1": 0.8036
+  },
+  "ensemble": {
+    "accuracy": 0.8117,
+    "macro_f1": 0.8091
+  },
+  "per_subject": {
+    "13": {
+      "accuracy": 0.8033,
+      "macro_f1": 0.7995
+    },
+    "14": {
+      "accuracy": 0.6708,
+      "macro_f1": 0.663
+    },
+    "15": {
+      "accuracy": 0.9611,
+      "macro_f1": 0.9605
+    }
+  },
+  "classification_report": {
+    "Negative": {
+      "precision": 0.7844446838306582,
+      "recall": 0.7224206349206349,
+      "f1-score": 0.7521561741465682,
+      "support": 10080.0
+    },
+    "Neutral": {
+      "precision": 0.7781714398189155,
+      "recall": 0.7957930756843801,
+      "f1-score": 0.7868836144698214,
+      "support": 9936.0
+    },
+    "Positive": {
+      "precision": 0.8652495045937669,
+      "recall": 0.9122507122507123,
+      "f1-score": 0.8881286982248521,
+      "support": 10530.0
+    },
+    "accuracy": 0.8117265763111373,
+    "macro avg": {
+      "precision": 0.8092885427477802,
+      "recall": 0.8101548076185758,
+      "f1-score": 0.8090561622804139,
+      "support": 30546.0
+    },
+    "weighted avg": {
+      "precision": 0.8102596452048105,
+      "recall": 0.8117265763111373,
+      "f1-score": 0.8103255752333282,
+      "support": 30546.0
+    }
+  }
+}
