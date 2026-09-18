@@ -1,5 +1,10 @@
 # EEG Emotion Recognition - SEED Dataset
 
+![Language](https://img.shields.io/badge/Language-Python%203.9%2B-blue.svg)
+![Framework](https://img.shields.io/badge/Framework-PyTorch%20%7C%20scikit--learn-orange.svg)
+![Dataset](https://img.shields.io/badge/Dataset-SEED%20EEG%20(SJTU)-brightgreen.svg)
+![License](https://img.shields.io/badge/License-MIT-purple.svg)
+
 Three-class emotion recognition (**Negative / Neutral / Positive**) using precomputed differential-entropy (DE) and asymmetry EEG features from the [SEED dataset](http://bcmi.sjtu.edu.cn/~seed/) (SJTU BCMI Lab).
 
 ---
@@ -126,3 +131,10 @@ python train.py --features-dir /path/to/SEED_EEG/ExtractedFeatures_1s --loso
 ## Reference
 
 Zheng, W. L., & Lu, B. L. (2015). *Investigating Critical Frequency Bands and Channels for EEG-Based Emotion Recognition with Deep Neural Networks*. IEEE Transactions on Autonomous Mental Development, 7(3), 162-175.
+
+---
+
+## License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
